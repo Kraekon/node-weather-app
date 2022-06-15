@@ -30,7 +30,7 @@ const forecast = ({ latitude, longitude }, callback) => {
         '. Temperature: ' + temperature +
         ' degrees [feels like: ' + feelsLike +
         ' degrees]. Humidity: ' + humidity +
-        '. Wind speed: ' + windSpeed + 'm/s.');
+        '%. Wind speed: ' + windSpeed + 'm/s.');
     }
   });
 };
