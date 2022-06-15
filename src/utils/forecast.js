@@ -22,11 +22,15 @@ const forecast = ({ latitude, longitude }, callback) => {
       const description = body.current.weather_descriptions[0];
       const temperature = body.current.temperature;
       const feelsLike = body.current.feelslike;
+      const humidity = body.current.humidity;
+      const windSpeed = body.current.wind_speed;
 
       callback(undefined,
         'Weather: ' + description +
         '. Temperature: ' + temperature +
-        ' degrees [feels like: ' + feelsLike + ' degrees].');
+        ' degrees [feels like: ' + feelsLike +
+        ' degrees]. Humidity: ' + humidity +
+        '. Wind speed: ' + windSpeed + 'm/s.');
     }
   });
 };
